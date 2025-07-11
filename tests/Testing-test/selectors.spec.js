@@ -1,10 +1,12 @@
 import {test, expect} from '@playwright/test'
 
-test.only("Learning selectors", async ({page}) =>{
+test("Learning selectors", async ({page}) =>{
 
 
     // navigate to the web page
-    await page.goto('http://127.0.0.1:5500/clickMe.html')
+   await page.goto('http://127.0.0.1:5500/clickMe.html')
+
+
 
     // selecting by ID
     await page.locator('#clickButton').click()

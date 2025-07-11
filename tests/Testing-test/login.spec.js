@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test'
 
-test.only("this is a login test", async ({ page }) => {
+test("this is a login test", async ({ page }) => {
  await page.goto('https://the-internet.herokuapp.com/login');  
  await page.locator("#username").click()
  await page.locator("#username").fill("tomsmith")
